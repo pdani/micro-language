@@ -1,0 +1,5 @@
+image:
+    file: Dockerfile
+tasks:
+  - init: "echo 'export STACK_ROOT=/workspace/micro-language/.stack' >> ~/.bashrc; source ~/.bashrc; mkdir -p $STACK_ROOT; echo 'local-bin-path: /workspace/micro-language/.bin' > $STACK_ROOT/config.yaml; stack setup"
+    command: "echo 'export STACK_ROOT=/workspace/micro-language/.stack' >> ~/.bashrc; source ~/.bashrc"
